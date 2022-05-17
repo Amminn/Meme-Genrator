@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #E5E5E5;
+}
+
+.app {
+    margin: 5rem auto;
+    max-width: 550px;
+    min-width: 550px;
+    background-color: white;
+    padding-bottom: 2.5rem;
+
+    nav {
+        height: 6.5rem;
+        background: $background;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        color: white;
+        
+        .right {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20.75px;
+            font-weight: 700;
+            color: white;
+            
+            img {
+                width: 31px;
+                height: 26px;
+                margin-right: 0.6rem;
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        // background-color: red;
+        margin: 0 auto;
+        
+        .form {
+            margin: 3.5rem 2rem;
+
+            .input {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.2rem;
+
+                input {
+                    width: 47.5%;
+                    padding: 1rem;
+                    margin-bottom: 1.5rem;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                }
+            }
+            
+            button {
+                width: 100%;
+                padding: 1rem;
+                border-radius: 5px;
+                background: $background;
+                font-family: 'Karla';
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: -0.1em;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .image-wrapper {
+            margin: 1.5rem auto;
+            position: relative;
+
+            p {
+                width: 100%;
+                color: white;
+                font-weight: 900;
+                font-size: 3rem;
+                text-align: center;
+                padding-inline: 0.5rem;
+                padding-block: 2rem;
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                text-shadow:
+                    2px 2px 0 #000,
+                    -2px -2px 0 #000,
+                    2px -2px 0 #000,
+                    -2px 2px 0 #000,
+                    0 2px 0 #000,
+                    2px 0 0 #000,
+                    0 -2px 0 #000,
+                    -2px 0 0 #000,
+                    2px 2px 5px #000;
+            }
+
+            .meme-image {
+                max-width: 100%;
+                display: block;
+            }
+
+            .top-text {
+                top: 0%;
+            }
+            
+            .bottom-text {
+                position: absolute;
+                bottom: 0%;
+            }
+        }
+    }
+}
+
+.box {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box > div {
+    margin-inline: auto;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* ==== sign up form === */
+
+// .form-container {
+//     height: 100vh;
+//     padding: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .form {
+//     background-color: white;
+//     padding: 50px;
+//     border-radius: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+// }
+
+// .form--input {
+//     width: 100%;
+//     margin-bottom: 20px;
+//     height: 40px;
+//     border-radius: 5px;
+//     border: 1px solid gray;
+//     padding: 5px;
+//     font-family: 'Inter', sans-serif;
+// }
+
+// .form--submit {
+//     width: 50%;
+//     padding: 10px;
+//     border-radius: 5px;
+//     color: white;
+//     background-color: #639;
+//     border: none;   
+//     cursor: pointer; 
+// }
+
+// .form--marketing {
+//     display: flex;
+//     margin-bottom: 20px;
+//     align-items: center;
+// }
+
+// .form--marketing > input {
+//     margin-right: 10px;
+// }
